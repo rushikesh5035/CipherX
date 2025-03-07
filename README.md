@@ -39,8 +39,6 @@ CipherX is a hybrid encryption-decryption framework that combines the strength o
   - [DecryptionServer.java](#decryptionserverjava)
   - [EncryptionClient.java](#encryptionclientjava)
 - [Security Considerations](#security-considerations)
-- [Future Enhancements](#future-enhancements)
-- [License](#license)
 
 ---
 
@@ -108,7 +106,7 @@ CipherX demonstrates a secure communication framework where a hybrid encryption-
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/cipherx-hybrid-encryption.git
+   git clone https://github.com/rushikesh5035/CipherX.git
    cd cipherx-hybrid-encryption
    ```
 
@@ -137,18 +135,6 @@ CipherX demonstrates a secure communication framework where a hybrid encryption-
 
 ## Code Files 📂
 
-### `DecryptionServer.java`
-
-This file contains the server-side implementation for decrypting the received data and keys.
-
-#### Highlights:
-
-- Listens on port 12345 for client connections.
-- Decrypts AES and DES keys using RSA.
-- Decrypts data sequentially using DES and AES.
-
-[View full code here](./DecryptionServer.java)
-
 ### `EncryptionClient.java`
 
 This file contains the client-side implementation for encrypting the plaintext and transmitting the encrypted data and keys to the server.
@@ -160,6 +146,18 @@ This file contains the client-side implementation for encrypting the plaintext a
 - Encrypts AES and DES keys using RSA.
 
 [View full code here](./EncryptionClient.java)
+
+### `DecryptionServer.java`
+
+This file contains the server-side implementation for decrypting the received data and keys.
+
+#### Highlights:
+
+- Listens on port 12345 for client connections.
+- Decrypts AES and DES keys using RSA.
+- Decrypts data sequentially using DES and AES.
+
+[View full code here](./DecryptionServer.java)
 
 ---
 
@@ -181,17 +179,3 @@ This file contains the client-side implementation for encrypting the plaintext a
    - Use SSL/TLS for encrypting socket communication.
 
 ---
-
-## Future Enhancements 🚀
-
-- Replace DES with AES for the second encryption layer.
-- Implement a secure key exchange protocol.
-- Add authentication and authorization mechanisms.
-- Use a database to log encrypted data and metadata for analysis.
-- Create a user-friendly GUI for client-side interaction.
-
----
-
-## License 📜
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
